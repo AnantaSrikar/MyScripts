@@ -14,6 +14,6 @@ ssh root@$IP_ADDR -t "rm cp-keys.sh /home/$NON_ROOT_USER/cp-keys.sh"
 
 printf "\n\nUpdating the server, hang on...\n\n"
 
-ssh $NON_ROOT_USER@$IP_ADDR -t "sudo apt update && sudo apt upgrade && sudo reboot"
+ssh $NON_ROOT_USER@$IP_ADDR -t "sudo apt update && sudo apt upgrade -y && sudo reboot"
 
 printf "\n\nUpdate completed, the server is now restarting. \nYou can access your server by typing: 'ssh $NON_ROOT_USER@$IP_ADDR'\n\nHave a great day!"
