@@ -1,3 +1,14 @@
+# Script to do a basic setup of a Digital Ocean droplet
+# Author: Srikar
+
+# TODO:
+#	Ask password only once
+#	Remove Root login access by editing /etc/ssh/sshd_config
+#	Update server inside a tmux session
+#	Setup UFW
+#	Set time
+#	run "unset HISTFILE" to prevent the password from being stored in bash history
+
 printf "Enter the IP address of the server: "
 read IP_ADDR
 
